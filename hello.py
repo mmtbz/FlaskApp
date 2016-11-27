@@ -31,9 +31,15 @@ def cnn():
     return get_news('rwanda').encode('utf-8')
 
 
+@app.route("/igihe")
+def igihe():
+    return get_news('bbc')
+
+
 @app.route("/iol")
 def iol():
     return get_news('iol')
+
 
 @app.route("/fox")
 def fox():
